@@ -48,11 +48,11 @@ function createIssue() {
 
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
-  const repo = `${username}/js-ajax-fetch-lab` 
+  const repo = `${username}/js-ajax-fetch-lab`
   const URL = `https://api.github.com/repos/${repo}/issues`
   fetch(URL,{
     Authorization: `token ${getToken()}`
   })
   .then(res => res.json())
-  
+
 }
