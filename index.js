@@ -1,3 +1,5 @@
+const username = 'NAME'
+
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
@@ -24,7 +26,7 @@ function showResults(json) {
 }
 
 function createIssue() {
-  const username = 'NAME'
+
   //use this function to create an issue based on the values input in index.html
   const repo = `${username}/js-ajax-fetch-lab`
   const URL = `https://api.github.com/repos/${repo}/issues`
