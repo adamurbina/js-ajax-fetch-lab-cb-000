@@ -54,6 +54,7 @@ function getIssues() {
     Authorization: `token ${getToken()}`
   })
   .then(res => res.json())
+  .then(json => showIssues(json))
 }
 
 function showIssues(json){
