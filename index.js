@@ -54,5 +54,8 @@ function getIssues() {
     Authorization: `token ${getToken()}`
   })
   .then(res => res.json())
+}
 
+function showIssues(json){
+  document.getElementById("issues").innerHTML = `<a href=${json.html_url}>${json.html_url}</a>`;
 }
